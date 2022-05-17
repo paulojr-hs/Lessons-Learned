@@ -1,0 +1,330 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 3,
+    "pending": 0,
+    "failures": 3,
+    "start": "2022-05-17T16:55:44.089Z",
+    "end": "2022-05-17T16:56:17.865Z",
+    "duration": 33776,
+    "testsRegistered": 9,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ce4c6fc1-7229-40c9-b71a-d1a2c963cb18",
+      "title": "",
+      "fullFile": "cypress/integration/bonus.spec.js",
+      "file": "cypress/integration/bonus.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c00c2e42-d080-429b-92f9-3b563e3a6875",
+          "title": "12 - Adicione uma tabela à página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A página deve possuir uma tabela",
+              "fullTitle": "12 - Adicione uma tabela à página A página deve possuir uma tabela",
+              "timedOut": null,
+              "duration": 10037,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('table');",
+              "err": {
+                "message": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `12 - Adicione uma tabela à ...`",
+                "estack": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `12 - Adicione uma tabela à ...`\n    at timedOutWaitingForPageLoad (http://localhost:46483/__cypress/runner/cypress_runner.js:156855:13)\n    at http://localhost:46483/__cypress/runner/cypress_runner.js:157843:16\n    at tryCatcher (http://localhost:46483/__cypress/runner/cypress_runner.js:10325:23)\n    at http://localhost:46483/__cypress/runner/cypress_runner.js:5447:41\n    at tryCatcher (http://localhost:46483/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:46483/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:46483/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:46483/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:46483/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:46483/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:46483/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:46483/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:46483/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:46483/__cypress/tests?p=cypress/integration/bonus.spec.js:145:8)",
+                "diff": null
+              },
+              "uuid": "4164853d-1cb2-4e55-bad4-6193735b30b3",
+              "parentUUID": "c00c2e42-d080-429b-92f9-3b563e3a6875",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4164853d-1cb2-4e55-bad4-6193735b30b3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10037,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "55a5be8e-0cf5-4dc2-a795-2dbb7a9062f8",
+          "title": "13 - Utilize o Box model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Altere `margin`, `padding` e `border` dos elementos para ver, na prática, como esses atributos influenciam e melhoram a visualização dos componentes",
+              "fullTitle": "13 - Utilize o Box model Altere `margin`, `padding` e `border` dos elementos para ver, na prática, como esses atributos influenciam e melhoram a visualização dos componentes",
+              "timedOut": null,
+              "duration": 10034,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('./style.css').then(function (content) {\n  var styles = ['margin', 'padding', 'border'];\n  expect(styles.every(function (style) {\n    return content.match(style);\n  }), 'Do not match styles margin, padding and border').to.be[\"true\"];\n});",
+              "err": {
+                "message": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `13 - Utilize o Box model`",
+                "estack": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `13 - Utilize o Box model`\n    at timedOutWaitingForPageLoad (http://localhost:46483/__cypress/runner/cypress_runner.js:156855:13)\n    at http://localhost:46483/__cypress/runner/cypress_runner.js:157843:16\n    at tryCatcher (http://localhost:46483/__cypress/runner/cypress_runner.js:10325:23)\n    at http://localhost:46483/__cypress/runner/cypress_runner.js:5447:41\n    at tryCatcher (http://localhost:46483/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:46483/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:46483/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:46483/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:46483/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:46483/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:46483/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:46483/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:46483/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:46483/__cypress/tests?p=cypress/integration/bonus.spec.js:153:8)",
+                "diff": null
+              },
+              "uuid": "957b0cdc-4594-42ba-8073-ae0dfa003712",
+              "parentUUID": "55a5be8e-0cf5-4dc2-a795-2dbb7a9062f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "957b0cdc-4594-42ba-8073-ae0dfa003712"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10034,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fadd7bc2-4477-446a-98b7-c2c47706e5ee",
+          "title": "14 - Altere atributos relacionados as fontes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Altere o tamanho da letra",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o tamanho da letra",
+              "timedOut": null,
+              "duration": 10040,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /font-size:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `14 - Altere atributos relac...`",
+                "estack": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `14 - Altere atributos relac...`\n    at timedOutWaitingForPageLoad (http://localhost:46483/__cypress/runner/cypress_runner.js:156855:13)\n    at http://localhost:46483/__cypress/runner/cypress_runner.js:157843:16\n    at tryCatcher (http://localhost:46483/__cypress/runner/cypress_runner.js:10325:23)\n    at http://localhost:46483/__cypress/runner/cypress_runner.js:5447:41\n    at tryCatcher (http://localhost:46483/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:46483/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:46483/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:46483/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:46483/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:46483/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:46483/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:46483/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:46483/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:46483/__cypress/tests?p=cypress/integration/bonus.spec.js:166:8)",
+                "diff": null
+              },
+              "uuid": "e383acbc-d4f1-4796-986c-73119762585d",
+              "parentUUID": "fadd7bc2-4477-446a-98b7-c2c47706e5ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere a cor da letra",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere a cor da letra",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /[^-]color:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "6141e823-501c-4798-8762-dd9964ffde34",
+              "parentUUID": "fadd7bc2-4477-446a-98b7-c2c47706e5ee",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Altere o espaçamento entre as linhas",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o espaçamento entre as linhas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /line-height:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "c5c8abb6-9eba-463c-b97d-0ecfba8d06ef",
+              "parentUUID": "fadd7bc2-4477-446a-98b7-c2c47706e5ee",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Altere o `font-family`",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o `font-family`",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /font-family:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "95a776ed-32c0-4d61-827f-7fe337685e46",
+              "parentUUID": "fadd7bc2-4477-446a-98b7-c2c47706e5ee",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e383acbc-d4f1-4796-986c-73119762585d"
+          ],
+          "pending": [],
+          "skipped": [
+            "6141e823-501c-4798-8762-dd9964ffde34",
+            "c5c8abb6-9eba-463c-b97d-0ecfba8d06ef",
+            "95a776ed-32c0-4d61-827f-7fe337685e46"
+          ],
+          "duration": 10040,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "834f0e4d-4f23-4e4d-ab97-c941adbd861f",
+          "title": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Utilizar a classe \"lado-esquerdo\"",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Utilizar a classe \"lado-esquerdo\"",
+              "timedOut": null,
+              "duration": 3381,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('.lado-esquerdo');",
+              "err": {},
+              "uuid": "d8db6b3e-a4bc-4c32-b307-5b3619ae19de",
+              "parentUUID": "834f0e4d-4f23-4e4d-ab97-c941adbd861f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Utilizar a classe \"lado-direito\"",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Utilizar a classe \"lado-direito\"",
+              "timedOut": null,
+              "duration": 99,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('.lado-direito');",
+              "err": {},
+              "uuid": "fa2acdb3-3a1d-41cf-b9ab-e97091ee2402",
+              "parentUUID": "834f0e4d-4f23-4e4d-ab97-c941adbd861f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar se os elementos com as classes lado-direito e lado-esquerdo estão posicionados corretamente",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Verificar se os elementos com as classes lado-direito e lado-esquerdo estão posicionados corretamente",
+              "timedOut": null,
+              "duration": 78,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().then(function (doc) {\n  var leftSide = {\n    top: (0, _ActionBase.evaluateOffset)(doc, '.lado-esquerdo', 'Top'),\n    height: (0, _ActionBase.evaluateOffset)(doc, '.lado-esquerdo', 'Height')\n  };\n  var rightSide = {\n    top: (0, _ActionBase.evaluateOffset)(doc, '.lado-direito', 'Top'),\n    height: (0, _ActionBase.evaluateOffset)(doc, '.lado-direito', 'Height')\n  };\n  expect((0, _ActionBase.isSidebySide)(leftSide, rightSide), 'Not side by side. *hint - search for float, width and positioning properties to achieve this requirement*').to.be[\"true\"];\n});",
+              "err": {},
+              "uuid": "c996b04f-cd2c-42de-b688-c4215b84bfd3",
+              "parentUUID": "834f0e4d-4f23-4e4d-ab97-c941adbd861f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d8db6b3e-a4bc-4c32-b307-5b3619ae19de",
+            "fa2acdb3-3a1d-41cf-b9ab-e97091ee2402",
+            "c996b04f-cd2c-42de-b688-c4215b84bfd3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3558,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
